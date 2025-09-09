@@ -1,22 +1,13 @@
-
 {
-  "name": "seedtag-tests",
+  "name": "seed-vault-registry",
   "version": "1.0.0",
-  "description": "Run unit tests on this project.",
-  "type": "module",
-  "private": true,
+  "description": "Decentralized registry for crop genetics and seed vault management on Stacks blockchain",
   "scripts": {
-    "test": "vitest run",
-    "test:report": "vitest run -- --coverage --costs",
-    "test:watch": "chokidar \"tests/**/*.ts\" \"contracts/**/*.clar\" -c \"npm run test:report\""
+    "test": "clarinet test",
+    "check": "clarinet check",
+    "console": "clarinet console"
   },
-  "author": "",
-  "license": "ISC",
-  "dependencies": {
-    "@hirosystems/clarinet-sdk": "^3.0.2",
-    "@stacks/transactions": "^7.0.6",
-    "chokidar-cli": "^3.0.0",
-    "vitest": "^3.1.3",
-    "vitest-environment-clarinet": "^2.3.0"
-  }
+  "keywords": ["stacks", "clarity", "blockchain", "agriculture", "genetics", "seed-vault"],
+  "author": "godiyasmith7-web",
+  "license": "MIT"
 }
